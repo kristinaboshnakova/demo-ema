@@ -1,0 +1,1693 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>КЪЩА ЗА ГОСТИ "ЕМА" - ВЕТРЕН ДОЛ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- LOADER OVERLAY -->
+  <div id="loader" class="loader" aria-label="Зареждане" role="status">
+    <div class="loader__content">
+      <h1 class="loader__title">Къща за гости "ЕМА" </h1>
+      <div class="loader__subtitle">СЕЛО ВЕТРЕН ДОЛ</div>
+
+      <div class="loader__bar" aria-hidden="true">
+        <div class="loader__barFill" id="barFill"></div>
+      </div>
+
+      <div class="loader__hint">ЗАРЕЖДАНЕ...</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+  
+      <!-- LEFT: Logo + Name -->
+      <div class="brand">
+        <a class="brand__logo" href="#" aria-label="Къща Ема - начало">
+            <img class="brand__logoImg" src="img/logo.svg" alt="Къща Ема лого">
+          </a>
+          
+        <div class="brand__name">КЪЩА ЗА ГОСТИ "ЕМА"</div>
+      </div>
+  
+      <!-- CENTER: Nav (inside bordered pill) -->
+      <nav class="navPill" aria-label="Главно меню">
+        <a class="navPill__link is-active" href="#nachalo">НАЧАЛО</a>
+        <a class="navPill__link" href="#za-nas">ЗА НАС</a>
+        <a class="navPill__link" href="#stai">НАСТАНЯВАНЕ</a>
+        <a class="navPill__link" href="#udobstva">УДОБСТВА</a>
+        <a class="navPill__link" href="#galeria">ГАЛЕРИЯ</a>
+        <a class="navPill__link" href="#ceni">ЦЕНИ</a>
+      </nav>
+  
+      <!-- RIGHT: Icons + CTA (outside nav pill border) -->
+      <div class="actions">
+        <a class="iconBtn" href="tel:+ +359895424742" aria-label="Телефон">
+          <!-- phone -->
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M6.6 10.8c1.4 2.7 3.9 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2c1.3.5 2.7.8 4.2.8c.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.6 22.2 1.8 13.4 1.8 2.4C1.8 1.7 2.3 1.2 3 1.2h3.4c.7 0 1.2.5 1.2 1.2c0 1.4.3 2.9.8 4.2c.1.4 0 .9-.2 1.2L6.6 10.8z"/>
+          </svg>
+        </a>
+  
+        <a class="iconBtn" href="https://www.facebook.com/profile.php?id=61566425327960" aria-label="Facebook">
+          <!-- facebook -->
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V5c-.3 0-1.4-.1-2.7-.1c-2.7 0-4.5 1.6-4.5 4.6V11H7v3h2.6v8h3.9z"/>
+          </svg>
+        </a>
+  
+      <!-- <a class="iconBtn" href="#" aria-label="Instagram">
+         
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4A3.8 3.8 0 0 0 20 16.2V7.8A3.8 3.8 0 0 0 16.2 4H7.8zM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm6-2.2a1.2 1.2 0 1 1 0 2.4a1.2 1.2 0 0 1 0-2.4z"/>
+          </svg>--> 
+        </a>
+  
+     
+  
+        <a class="ctaBtn" href="#rezervacia">
+           
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 8H6v10h14V10zM6 8h14V6H6v2z"/>
+          </svg>
+          <span>РЕЗЕРВАЦИЯ</span>
+        </a>
+      </div>
+  
+      <button class="burger" id="burger" aria-label="Отвори меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+    </div>
+  </header>
+  
+
+  <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <button class="mobileMenu__close" id="mobileMenuClose" aria-label="Затвори меню">
+        <span></span><span></span><span></span>
+      </button>
+      
+    <nav class="mobileMenu__nav">
+      <a href="#nachalo">Начало</a>
+      <a href="#za-nas">За нас</a>
+      <a href="#stai">Настаняване</a>
+      <a href="#udobstva">Удобства</a>
+      <a href="#galeria">Галерия</a>
+      <a href="#ceni">Цени</a>
+      <a href="#rezervacia" class="mobileMenu__cta">Резервация</a>
+    </nav>
+  </div>
+  <section id="nachalo" class="hero" aria-label="Начало">
+    <!-- Background layers -->
+    <div class="hero__bg">
+      <div class="hero__bgLayer is-a"></div>
+      <div class="hero__bgLayer is-b"></div>
+    </div>
+  
+    <!-- Overlay -->
+    <div class="hero__overlay" aria-hidden="true"></div>
+  
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__kicker">СЕЛО ВЕТРЕН ДОЛ</div>
+  
+        <h1 class="hero__title">
+          <span class="hero__titleTop">КЪЩА</span>
+          <span class="hero__titleBottom">ЕМА</span>
+        </h1>
+  
+        <p class="hero__desc">
+          УЮТ, СПОКОЙСТВИЕ И ЗЕЛЕНИНА В СЪРЦЕТО НА ПРИРОДАТА!<br />
+          ИДЕАЛНОТО МЯСТО ЗА СЕМЕЙНА ВАКАЦИЯ, РОМАНТИЧЕН УИКЕНД ИЛИ БЯГСТВО С ПРИЯТЕЛИ!
+        </p>
+  
+        <div class="hero__cta">
+          <a class="btn btn--gold" href="#rezervacia">
+            <span class="btn__icon">
+              <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 4h18v18H3zM16 2v4M8 2v4M3 10h18"/>
+              </svg>
+            </span>
+            <span>РЕЗЕРВИРАЙ</span>
+          </a>
+  
+          <a class="btn btn--glass" href="#za-nas">
+            <span class="btn__icon">
+              <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="10" x2="12" y2="16"/>
+                <circle cx="12" cy="7" r="1"/>
+              </svg>
+            </span>
+            <span>НАУЧИ ПОВЕЧЕ</span>
+          </a>
+
+          
+        </div>
+        <div class="hero__meta">
+            <span class="hero__metaItem">📍Ветрен дол, ул. „Първа“ №32 </span>
+
+          </div>
+      </div>      
+    </div>
+  </section>
+
+
+
+
+  <section id="za-nas" class="about" aria-label="За нас">
+    <!-- декорации -->
+    <img class="about__deco about__deco--tl" src="deer-shape-svgrepo-com.svg" alt="" aria-hidden="true">
+    <img class="about__deco about__deco--br" src="mountain-svgrepo-com.svg" alt="" aria-hidden="true">
+  
+    <div class="about__inner">
+      <div class="about__pill">
+        <span>ЗА НАС</span>
+      </div>
+  
+      <h2 class="about__title">
+        <span class="about__titleTop">ДОБРЕ ДОШЛИ</span>
+        <span class="about__titleBottom">В НАШАТА КЪЩА</span>
+      </h2>
+  
+      <p class="about__subtitle">
+        <strong>Къща за гости ЕМА </strong> – място, създадено с любов, за да се чувствате като у дома си, далеч от шума на града.
+      </p>
+  
+
+    </div>
+
+
+    <section id="predimstva" class="features" aria-label="Предимства">
+        <div class="features__inner">
+          <div class="features__grid">
+      
+            <article class="featureCard">
+              <div class="featureCard__icon" aria-hidden="true">
+                <!-- home -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11l9-7 9 7"/>
+                    <path d="M5 10v10h14V10"/>
+                    <path d="M10 20v-6h4v6"/>
+                    <path d="M2 18h6"/>
+                    <path d="M2 21h6"/>
+                  </svg>
+                  
+              </div>
+              <h3 class="featureCard__title">За Къщата</h3>
+              <div class="featureCard__line" aria-hidden="true"></div>
+              <p class="featureCard__text">
+                Къщата разполага с открит басейн, механа <br>
+                и градина, в която можете да направите барбекю
+              </p>
+            </article>
+      
+            <article class="featureCard">
+              <div class="featureCard__icon" aria-hidden="true">
+                <!-- mountain -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M2 20l7-12 4 7 3-4 6 9H2z"/>
+                    <circle cx="18" cy="6" r="2"/>
+                  </svg>
+                  
+              </div>
+              <h3 class="featureCard__title">Спиращи дъха гледки</h3>
+              <div class="featureCard__line" aria-hidden="true"></div>
+              <p class="featureCard__text">
+                Голяма открита тераса с гледка към планината<br>
+               
+              </p>
+            </article>
+      
+            <article class="featureCard">
+              <div class="featureCard__icon" aria-hidden="true">
+                <!-- heart -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 21s-7-4.6-9.3-8.6C.6 8.8 3 6 6 6c1.7 0 3 .9 4 2 1-1.1 2.3-2 4-2 3 0 5.4 2.8 3.3 6.4C19 16.4 12 21 12 21z"/>
+                    <path d="M4 12c1 .8 2 .8 3 0s2-.8 3 0"/>
+                  </svg>
+                  
+              </div>
+              <h3 class="featureCard__title">Спокойствие и тишина</h3>
+              <div class="featureCard__line" aria-hidden="true"></div>
+              <p class="featureCard__text">
+                Просторен двор със свеж въздух<br>
+                и много зеленина
+              </p>
+            </article>
+      
+            <article class="featureCard">
+              <div class="featureCard__icon" aria-hidden="true">
+                <!-- star -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3l2.8 6 6.5.6-4.9 4.2 1.5 6.3L12 17.8 6.1 20l1.5-6.3L2.7 9.6 9.2 9 12 3z"/>
+                    <path d="M8 12l2.5 2.5L16 9"/>
+                  </svg>
+                  
+              </div>
+              <h3 class="featureCard__title">Всички удобства</h3>
+              <div class="featureCard__line" aria-hidden="true"></div>
+              <p class="featureCard__text">
+                Напълно модерно обзаведени стаи с всичко необходимо за<br>
+                незабравим престой
+              </p>
+            </article>
+      
+          </div>
+        </div>
+      </section>
+      
+
+  <section class="aboutDetails" aria-label="За нас - детайли">
+    <div class="aboutDetails__inner">
+  
+      <!-- LEFT: collage -->
+<!-- LEFT: filmstrip collage (CSS only) -->
+<div class="filmShowcase" aria-label="Снимки">
+    <div class="film">
+      <figure class="film__cell film__cell--a">
+        <img src="img/bbq.webp" alt="Барбекю зона">
+      </figure>
+  
+      <figure class="film__cell film__cell--b">
+        <img src="img/basein.webp" alt="Басейн">
+      </figure>
+  
+      <figure class="film__cell film__cell--c">
+        <img src="img/detski-kut.webp" alt="Детски кът">
+      </figure>
+  
+      <figure class="film__cell film__cell--d">
+        <img src="img/mehana.webp" alt="Механа">
+      </figure>
+    </div>
+  </div>
+  
+  
+      <!-- RIGHT: content -->
+      <div class="aboutText">
+        <h3 class="aboutText__title">най-хубавите почивки са споделените</h3>
+  
+        <div class="aboutText__body">
+          <p>
+            В Къща за гости „ЕМА“ няколко семейства се събират без компромис <br/>
+            просторни стаи, удобни легла, меки дивани и онова усещане за дом
+          </p>
+          <p>
+            Комфортни спални за спокоен сън<br/>
+            Общи пространства, създадени за разговори и споделени вечери<br/>
+            Тишина, в която и децата, и родителите си почиват
+          </p>
+          <p>
+             Тук дните минават леко,<br/>
+             а вечерите събират всички на едно място- без бързане, без шум, само заедно.
+          </p>
+        </div>
+  
+        <div class="featureGrid">
+
+            <!-- BARBECUE -->
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <!-- Grill -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 9h14"/>
+                  <path d="M7 9l-2 9"/>
+                  <path d="M17 9l2 9"/>
+                  <path d="M9 13h6"/>
+                  <path d="M10 3s2 2 0 4"/>
+                  <path d="M14 3s2 2 0 4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="feature__title">БАРБЕКЮ ЗОНА</div>
+                <div class="feature__sub">ОБОРУДВАН КЪТ ЗА ГОТВЕНЕ И СЪБИРАНИЯ</div>
+              </div>
+            </div>
+          
+            <!-- POOL -->
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <!-- Pool -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 10h18v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-6z"/>
+                  <path d="M3 16c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1"/>
+                </svg>
+              </div>
+              <div>
+                <div class="feature__title">БАСЕЙН</div>
+                <div class="feature__sub">СЕЗОНЕН БАСЕЙН ЗА РЕЛАКС И ЗАБАВЛЕНИЕ</div>
+              </div>
+            </div>
+          
+            <!-- KIDS AREA -->
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <!-- Kids playground -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="5" r="2"/>
+                  <path d="M12 7v6"/>
+                  <path d="M9 10l3 2 3-2"/>
+                  <path d="M7 20l5-6 5 6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="feature__title">ДЕТСКИ КЪТ</div>
+                <div class="feature__sub">БЕЗОПАСНА ЗОНА ЗА ИГРА И ЗАБАВЛЕНИЕ</div>
+              </div>
+            </div>
+          
+            <!-- MEHANA -->
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <!-- Tavern / Restaurant -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16"/>
+                  <path d="M6 6v12"/>
+                  <path d="M18 6v12"/>
+                  <path d="M4 18h16"/>
+                  <path d="M9 10h6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="feature__title">МЕХАНА</div>
+                <div class="feature__sub">ТРАДИЦИОННА ОБСТАНОВКА ЗА ГОСТИТЕ</div>
+              </div>
+            </div>
+          
+            <!-- BUTTONS -->
+            <div class="aboutBtns">
+              <a class="btn2 btn2--dark" href="#stai">НАШИТЕ СТАИ</a>
+              <a class="btn2 btn2--light" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+            </div>
+          
+            <!-- LINE -->
+            <div class="aboutLine"></div>
+          
+          </div>
+          
+    </div>
+  </section>
+  </section>
+
+
+  <section id="stai" class="rooms" aria-label="Стаи">
+    <div class="rooms__inner">
+  
+      <div class="rooms__pill"><span>СТАИ</span></div>
+  
+      <h2 class="rooms__title">
+        <span class="rooms__titleTop">КОМФОРТ И УЮТ</span>
+        <span class="rooms__titleBottom">ЗА 16 ГОСТИ</span>
+      </h2>
+  
+      <p class="rooms__lead">
+        КАПАЦИТЕТЪТ НА КЪЩАТА Е <strong>16 МЕСТА</strong>, РАЗПРЕДЕЛЕНИ В
+        <strong>ДВОЙНИ</strong> И <strong>ТРОЙНИ</strong> СТАИ, КАКТО И <strong>1 СТУДИО</strong>.
+        ВСЯКА СТАЯ Е МОДЕРНО И КОМФОРТНО ОБЗАВЕДЕНА И Е СЪС <strong>САМОСТОЯТЕЛНА БАНЯ/WC</strong>.
+      </p>
+  
+      <!-- Highlights 
+      <div class="rooms__highlights">
+        <article class="roomsCard">
+          <div class="roomsCard__icon" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24">
+              <path d="M4 12v7"/>
+              <path d="M20 12v7"/>
+              <path d="M4 14h16"/>
+              <path d="M5 12h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2z"/>
+              <path d="M7 10h4"/>
+            </svg>
+          </div>
+          <div class="roomsCard__title">НАСТАНЯВАНЕ</div>
+          <div class="roomsCard__text">ДВОЙНИ • ТРОЙНИ • 1 СТУДИО</div>
+        </article>
+  
+        <article class="roomsCard">
+          <div class="roomsCard__icon" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24">
+              <path d="M5 9c4.7-4.7 9.3-4.7 14 0"/>
+              <path d="M8 12c3-3 6-3 9 0"/>
+              <path d="M11 15c1.3-1.3 2.7-1.3 4 0"/>
+              <circle cx="12" cy="18" r="1"/>
+            </svg>
+          </div>
+          <div class="roomsCard__title">WI-FI</div>
+          <div class="roomsCard__text">ВЪВ ВСЯКА СТАЯ</div>
+        </article>-->
+  
+     <!--   <article class="roomsCard">
+          <div class="roomsCard__icon" aria-hidden="true">
+           
+            <svg viewBox="0 0 24 24">
+              <path d="M7 16l1-4h8l1 4"/>
+              <path d="M6 16h12"/>
+              <circle cx="8" cy="17.5" r="1.2"/>
+              <circle cx="16" cy="17.5" r="1.2"/>
+              <path d="M9 12l1.2-3h3.6L15 12"/>
+            </svg>
+          </div>
+          <div class="roomsCard__title">ПАРКИНГ</div>
+          <div class="roomsCard__text">ПАРКОМЕСТА ЗА ГОСТИТЕ</div>
+        </article>
+      </div>-->
+  
+      <!-- Amenities grid 
+      <div class="rooms__grid" aria-label="Удобства в стаите">
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">❄️</div>
+          <div class="amenity__meta">
+            <div class="amenity__title">КЛИМАТИК</div>
+            <div class="amenity__sub">КОМФОРТ ПРЕЗ ВСИЧКИ СЕЗОНИ</div>
+          </div>
+        </div>
+  
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">
+           
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 7h7a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H7V7z"/>
+              <path d="M18 10h1a2 2 0 0 1 0 4h-1"/>
+              <path d="M8 5h3"/>
+            </svg>
+          </div>
+          <div class="amenity__meta">
+            <div class="amenity__title">ЕЛ. КАНА</div>
+            <div class="amenity__sub">ЧАЙ И КАФЕ</div>
+          </div>
+        </div>
+  
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="6" width="16" height="10" rx="2"/>
+              <path d="M10 20h4"/>
+              <path d="M12 16v4"/>
+            </svg>
+          </div>
+          <div class="amenity__meta">
+            <div class="amenity__title">ТЕЛЕВИЗОР</div>
+            <div class="amenity__sub">ПЛОСЪК ЕКРАН</div>
+          </div>
+        </div>
+  
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">
+            
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="7" y="3" width="10" height="18" rx="2"/>
+              <path d="M7 11h10"/>
+              <path d="M9 8h1"/>
+              <path d="M9 15h1"/>
+            </svg>
+          </div>
+          <div class="amenity__meta">
+            <div class="amenity__title">ХЛАДИЛНИК</div>
+            <div class="amenity__sub">И МИНИБАР</div>
+          </div>
+        </div>
+  
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">
+           
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 8h12"/>
+              <path d="M7 8V6a2 2 0 0 1 2-2h2"/>
+              <path d="M6 10v6a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-6"/>
+              <path d="M8 20v1"/>
+              <path d="M16 20v1"/>
+            </svg>
+          </div>
+          <div class="amenity__meta">
+            <div class="amenity__title">БАНЯ/WC</div>
+            <div class="amenity__sub">САМОСТОЯТЕЛНА</div>
+          </div>
+        </div>
+  
+        <div class="amenity">
+          <div class="amenity__icon" aria-hidden="true">
+           
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12a4 4 0 0 1 4-4h6a3 3 0 0 1 0 6H9"/>
+              <path d="M9 14v4"/>
+              <path d="M9 18h3"/>
+              <path d="M16 10h2"/>
+            </svg>
+          </div>
+          <div class="amenity__meta">
+            <div class="amenity__title">СЕШОАР</div>
+            <div class="amenity__sub">КЪРПИ И ТОАЛЕТНИ ПРИНАДЛЕЖНОСТИ</div>
+          </div>
+        </div>
+      </div>-->
+  
+      <!-- Extra info (house-wide) -->
+      <div class="rooms__note" aria-label="Допълнителна информация">
+        <p>
+          НА РАЗПОЛОЖЕНИЕ НА ГОСТИТЕ Е <strong>ОБЩА КУХНЯ</strong> ЗА ГОТВЕНЕ.
+          ИМАМЕ <strong>ОТОПЛЯЕМ ВЪНШЕН БАСЕЙН</strong> С УДОБНИ <strong>ШЕЗЛОНГИ</strong> И <strong>ЧАДЪРИ</strong>.
+          <strong>НОВООТКРИТАТА НИ МЕХАНА</strong> ВИ ОЧАКВА С ДОМАШЕН УЮТ И ТОПЛА АТМОСФЕРА.
+          КЪЩАТА СЕ ОТДАВА <strong>ПО СТАИ</strong> ИЛИ <strong>ЦЯЛАТА</strong>.
+        </p>
+        <p class="rooms__noteSmall">
+          ПРИ ЗАЯВКА ПРЕДЛАГАМЕ <strong>ДЕТСКИ КРЕВАТЧЕТА</strong>.
+        </p>
+      </div>
+  
+    </div>
+
+    <!-- =========================
+  ROOMS TABS (5 стаи + "ВИЖ СНИМКИ" + POPUP)
+========================== -->
+<section class="roomsTabs" aria-label="Стаи - табове">
+
+    <div class="tabsPill" role="tablist" aria-label="Тип стая">
+      <button class="tab is-active" role="tab" aria-selected="true" aria-controls="roompanel-1" id="roomtab-1" type="button">
+        <span class="tab__icon" aria-hidden="true"></span>
+        <span class="tab__text">Двойна • 2 легла</span>
+      </button>
+  
+      <button class="tab" role="tab" aria-selected="false" aria-controls="roompanel-2" id="roomtab-2" type="button" tabindex="-1">
+        <span class="tab__icon" aria-hidden="true"></span>
+        <span class="tab__text">Двойнa • спалня </span>
+      </button>
+  
+      <button class="tab" role="tab" aria-selected="false" aria-controls="roompanel-3" id="roomtab-3" type="button" tabindex="-1">
+        <span class="tab__icon" aria-hidden="true"></span>
+        <span class="tab__text">Тройна стая</span>
+      </button>
+  
+      <button class="tab" role="tab" aria-selected="false" aria-controls="roompanel-4" id="roomtab-4" type="button" tabindex="-1">
+        <span class="tab__icon" aria-hidden="true"></span>
+        <span class="tab__text">Тройна • балкон</span>
+      </button>
+  
+      <button class="tab" role="tab" aria-selected="false" aria-controls="roompanel-5" id="roomtab-5" type="button" tabindex="-1">
+        <span class="tab__icon" aria-hidden="true"></span>
+        <span class="tab__text">Джуниър суит</span>
+      </button>
+    </div>
+  
+    <!-- Panel 1 -->
+    <div class="tabsPanel is-active" role="tabpanel" id="roompanel-1" aria-labelledby="roomtab-1">
+      <div class="tabsPanel__frame">
+        <div class="tabsGrid">
+          <div class="pillItem"><span class="pillItem__check">✓</span> 20 m²</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> 2 единични легла</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Климатик</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Самостоятелна баня/WC</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Телевизор (плосък екран)</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Wi-Fi интернет</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Минибар</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Тераса / веранда</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Гледка към двор/градина</div>
+        </div>
+  
+        <div class="tabsPanel__actions">
+          <button class="seePhotosBtn" type="button" data-room="double-twin" aria-haspopup="dialog">
+            ВИЖ СНИМКИ
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Panel 2 -->
+    <div class="tabsPanel" role="tabpanel" id="roompanel-2" aria-labelledby="roomtab-2" hidden>
+      <div class="tabsPanel__frame">
+        <div class="tabsGrid">
+          <div class="pillItem"><span class="pillItem__check">✓</span> 20 m²</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> 1 двойно легло</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Климатик</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Самостоятелна баня/WC</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Телевизор</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Wi-Fi интернет</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Минибар</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Тераса</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Тихо разположение</div>
+        </div>
+  
+        <div class="tabsPanel__actions">
+          <button class="seePhotosBtn" type="button" data-room="double-double" aria-haspopup="dialog">
+            ВИЖ СНИМКИ
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Panel 3 -->
+    <div class="tabsPanel" role="tabpanel" id="roompanel-3" aria-labelledby="roomtab-3" hidden>
+      <div class="tabsPanel__frame">
+        <div class="tabsGrid">
+          <div class="pillItem"><span class="pillItem__check">✓</span> 25 m²</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> 3 единични легла</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Климатик</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Самостоятелна баня/WC</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Телевизор</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Wi-Fi интернет</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Минибар</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Шумоизолация</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Външни мебели</div>
+        </div>
+  
+        <div class="tabsPanel__actions">
+          <button class="seePhotosBtn" type="button" data-room="triple" aria-haspopup="dialog">
+            ВИЖ СНИМКИ
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Panel 4 -->
+    <div class="tabsPanel" role="tabpanel" id="roompanel-4" aria-labelledby="roomtab-4" hidden>
+      <div class="tabsPanel__frame">
+        <div class="tabsGrid">
+          <div class="pillItem"><span class="pillItem__check">✓</span> 30 m²</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> 3 места</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Балкон</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Климатик</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Самостоятелна баня/WC</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Wi-Fi интернет</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Телевизор</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Минибар</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Гледка</div>
+        </div>
+  
+        <div class="tabsPanel__actions">
+          <button class="seePhotosBtn" type="button" data-room="triple-balcony" aria-haspopup="dialog">
+            ВИЖ СНИМКИ
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Panel 5 -->
+    <div class="tabsPanel" role="tabpanel" id="roompanel-5" aria-labelledby="roomtab-5" hidden>
+      <div class="tabsPanel__frame">
+        <div class="tabsGrid">
+          <div class="pillItem"><span class="pillItem__check">✓</span> 35 m²</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Спалня + дневна зона</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Планински изглед</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Тераса / веранда</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Климатик</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Телевизор</div>
+  
+          <div class="pillItem"><span class="pillItem__check">✓</span> Минибар</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Самостоятелна баня/WC</div>
+          <div class="pillItem"><span class="pillItem__check">✓</span> Wi-Fi интернет</div>
+        </div>
+  
+        <div class="tabsPanel__actions">
+          <button class="seePhotosBtn" type="button" data-room="junior-suite" aria-haspopup="dialog">
+            ВИЖ СНИМКИ
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- =========================
+      PHOTO MODAL (един общ)
+    ========================== -->
+    <div class="photoModal" id="photoModal" aria-hidden="true">
+      <div class="photoModal__backdrop" data-close="1"></div>
+  
+      <div class="photoModal__dialog"
+           role="dialog"
+           aria-modal="true"
+           aria-labelledby="photoModalTitle">
+  
+        <div class="photoModal__top">
+          <div class="photoModal__title" id="photoModalTitle">Снимки</div>
+  
+          <button class="photoModal__close" type="button" aria-label="Затвори" data-close="1">✕</button>
+        </div>
+  
+        <div class="photoModal__slider" aria-label="Галерия">
+          <button class="photoModal__nav photoModal__nav--prev" type="button" aria-label="Предишна снимка">‹</button>
+  
+          <figure class="photoModal__figure">
+            <img class="photoModal__img" src="" alt="">
+          </figure>
+  
+          <button class="photoModal__nav photoModal__nav--next" type="button" aria-label="Следваща снимка">›</button>
+        </div>
+  
+        <div class="photoModal__dots" aria-label="Индикатори"></div>
+      </div>
+    </div>
+  
+  </section>
+  </section>
+
+
+  <section id="udobstva" class="amenities2" aria-label="Удобства">
+
+  <div class="amenities2__inner">
+
+    <div class="amenities2__pill"><span>УДОБСТВА</span></div>
+
+    <h2 class="amenities2__title">
+      <span class="amenities2__titleTop">НАЙ-ПОПУЛЯРНИТЕ</span>
+      <span class="amenities2__titleBottom">УДОБСТВА</span>
+    </h2>
+
+    <p class="amenities2__lead">
+      Всичко необходимо за комфортен и приятен престой – за семейства, приятели и спокойна почивка.
+    </p>
+
+    <!-- Popular -->
+    <div class="amenities2__popular" aria-label="Най-популярните удобства">
+      <div class="amenities2__popularGrid">
+
+        <div class="popular2">
+          <span class="popular2__icon" aria-hidden="true">
+            <!-- pool -->
+            <svg viewBox="0 0 24 24">
+              <path d="M3 18c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1"/>
+              <path d="M3 21c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1"/>
+              <path d="M7 3v10"/>
+              <path d="M7 6h4"/>
+              <path d="M7 9h4"/>
+              <path d="M15 3v10"/>
+              <path d="M15 6h4"/>
+              <path d="M15 9h4"/>
+            </svg>
+          </span>
+          <span class="popular2__text">Външен басейн</span>
+        </div>
+
+        <div class="popular2">
+          <span class="popular2__icon" aria-hidden="true">
+            <!-- no smoking -->
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M7 7l10 10"/>
+              <path d="M6 14h12"/>
+              <path d="M6 17h8"/>
+            </svg>
+          </span>
+          <span class="popular2__text">Стаи за непушачи</span>
+        </div>
+
+        <div class="popular2">
+          <span class="popular2__icon" aria-hidden="true">
+            <!-- parking -->
+            <svg viewBox="0 0 24 24">
+              <path d="M7 21V3h7a5 5 0 0 1 0 10H7"/>
+              <path d="M7 13h7"/>
+            </svg>
+          </span>
+          <span class="popular2__text">Безплатен паркинг</span>
+        </div>
+
+        <div class="popular2">
+          <span class="popular2__icon" aria-hidden="true">
+            <!-- wifi -->
+            <svg viewBox="0 0 24 24">
+              <path d="M5 9c4.7-4.7 9.3-4.7 14 0"/>
+              <path d="M8 12c3-3 6-3 9 0"/>
+              <path d="M11 15c1.3-1.3 2.7-1.3 4 0"/>
+              <circle cx="12" cy="18" r="1"/>
+            </svg>
+          </span>
+          <span class="popular2__text">Безплатен WiFi</span>
+        </div>
+
+        <div class="popular2">
+          <span class="popular2__icon" aria-hidden="true">
+            <!-- family -->
+            <svg viewBox="0 0 24 24">
+              <path d="M7 21v-3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3"/>
+              <circle cx="12" cy="9" r="3"/>
+              <path d="M4 21v-2a3 3 0 0 1 3-3"/>
+              <path d="M20 21v-2a3 3 0 0 0-3-3"/>
+            </svg>
+          </span>
+          <span class="popular2__text">Семейни стаи</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="amenities2__grid" aria-label="Категории удобства">
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- bath -->
+            <svg viewBox="0 0 24 24">
+              <path d="M6 8h12"/>
+              <path d="M7 8V6a2 2 0 0 1 2-2h2"/>
+              <path d="M6 10v6a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-6"/>
+              <path d="M8 20v1"/>
+              <path d="M16 20v1"/>
+            </svg>
+          </span>
+          Баня
+        </h3>
+        <ul class="amenityList">
+          <li>Тоалетна хартия</li>
+          <li>Хавлиени кърпи</li>
+          <li>Вана или душ</li>
+          <li>Самостоятелна баня</li>
+          <li>Тоалетна</li>
+          <li>Безплатни тоалетни принадлежности</li>
+          <li>Сешоар</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- bed -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4 12v7"/>
+              <path d="M20 12v7"/>
+              <path d="M4 14h16"/>
+              <path d="M5 12h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2z"/>
+              <path d="M7 10h4"/>
+            </svg>
+          </span>
+          Спалня
+        </h3>
+        <ul class="amenityList">
+          <li>Спално бельо</li>
+          <li>Гардероб или килер</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- garden -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22V12"/>
+              <path d="M12 12c-2-6-6-6-6-6s0 4 6 6z"/>
+              <path d="M12 12c2-6 6-6 6-6s0 4-6 6z"/>
+              <path d="M7 22h10"/>
+            </svg>
+          </span>
+          Двор / градина
+        </h3>
+        <ul class="amenityList">
+          <li>Зона за пикник</li>
+          <li>Градинска мебел</li>
+          <li>Кът за хранене на открито</li>
+          <li>Тераса за слънчеви бани</li>
+          <li>Веранда</li>
+          <li>Тераса</li>
+          <li>Градина</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- kitchen -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4 3h16"/>
+              <path d="M6 3v18"/>
+              <path d="M18 3v18"/>
+              <path d="M4 21h16"/>
+              <path d="M9 8h6"/>
+              <path d="M9 12h6"/>
+            </svg>
+          </span>
+          Кухня
+        </h3>
+        <ul class="amenityList">
+          <li>Обща кухня</li>
+          <li>Маса за хранене</li>
+          <li>Електрическа кана</li>
+          <li>Хладилник</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- room -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4 20V8a2 2 0 0 1 2-2h6"/>
+              <path d="M10 6h10v14H4"/>
+              <path d="M14 10h3"/>
+              <path d="M14 14h3"/>
+            </svg>
+          </span>
+          Удобства в стаите
+        </h3>
+        <ul class="amenityList">
+          <li>Контакт до леглото</li>
+          <li>Рафт за дрехи</li>
+          <li>Климатик</li>
+          <li>Шумоизолация</li>
+          <li>Мрежа против комари</li>
+          <li>Отопление</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- tv -->
+            <svg viewBox="0 0 24 24">
+              <rect x="4" y="6" width="16" height="10" rx="2"/>
+              <path d="M10 20h4"/>
+              <path d="M12 16v4"/>
+            </svg>
+          </span>
+          Медия и технологии
+        </h3>
+        <ul class="amenityList">
+          <li>Телевизор с плосък екран</li>
+          <li>Обща TV зала</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- wifi -->
+            <svg viewBox="0 0 24 24">
+              <path d="M5 9c4.7-4.7 9.3-4.7 14 0"/>
+              <path d="M8 12c3-3 6-3 9 0"/>
+              <path d="M11 15c1.3-1.3 2.7-1.3 4 0"/>
+              <circle cx="12" cy="18" r="1"/>
+            </svg>
+          </span>
+          Интернет / Паркинг
+        </h3>
+        <ul class="amenityList">
+          <li>WiFi интернет (безплатно)</li>
+          <li>Безплатен обществен паркинг наблизо</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- kid -->
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="5" r="2"/>
+              <path d="M12 7v6"/>
+              <path d="M9 10l3 2 3-2"/>
+              <path d="M7 20l5-6 5 6"/>
+            </svg>
+          </span>
+          За семейства
+        </h3>
+        <ul class="amenityList">
+          <li>Детска площадка</li>
+          <li>Настолни игри / пъзели</li>
+        </ul>
+      </article>
+
+      <article class="amenityBox amenityBox--accent">
+        <h3 class="amenityBox__title">
+          <span class="amenityBox__icon" aria-hidden="true">
+            <!-- pool -->
+            <svg viewBox="0 0 24 24">
+              <path d="M3 18c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1"/>
+              <path d="M3 21c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1"/>
+              <path d="M7 3v10"/>
+              <path d="M7 6h4"/>
+              <path d="M7 9h4"/>
+              <path d="M15 3v10"/>
+              <path d="M15 6h4"/>
+              <path d="M15 9h4"/>
+            </svg>
+          </span>
+          Външен басейн
+        </h3>
+        <ul class="amenityList">
+          <li>Безплатно</li>
+          <li>Сезонен</li>
+          <li>За всички възрасти</li>
+          <li>Басейн с гледка</li>
+          <li>Шезлонги</li>
+          <li>Плажни чадъри</li>
+          <li>Кърпи за басейн/плаж</li>
+          <li>Покривало за басейн</li>
+          <li>Играчки за басейн</li>
+        </ul>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<section id="galeria" class="galleryPuzzle" aria-label="Галерия">
+  <div class="galleryPuzzle__inner">
+    <div class="galleryPuzzle__pill"><span>ГАЛЕРИЯ</span></div>
+
+    <h2 class="galleryPuzzle__title">
+      <span class="galleryPuzzle__titleTop">СНИМКИ</span>
+      <span class="galleryPuzzle__titleBottom">ОТ КЪЩАТА</span>
+    </h2>
+
+    <p class="galleryPuzzle__lead">Кликнете върху снимка за преглед в цял размер.</p>
+
+    <div class="puzzleGrid" id="puzzleGrid">
+      <button class="puzzleItem" type="button" data-full="img/basein.webp" aria-label="Снимка 1">
+        <img src="img/basein.webp" alt="Снимка 1" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/kushta-za-gosti-ema-nachalo1.webp" aria-label="Снимка 2">
+        <img src="img/kushta-za-gosti-ema-nachalo1.webp" alt="Снимка 2" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/mehana.webp" aria-label="Снимка 3">
+        <img src="img/mehana.webp" alt="Снимка 3" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-1-1.webp" aria-label="Снимка 4">
+        <img src="img/staia-1-1.webp" alt="Снимка 4" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-1-2.webp" aria-label="Снимка 5">
+        <img src="img/staia-1-2.webp" alt="Снимка 5" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-2.webp" aria-label="Снимка 6">
+        <img src="img/staia-2.webp" alt="Снимка 6" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-2-1.webp" aria-label="Снимка 7">
+        <img src="img/staia-2-1.webp" alt="Снимка 7" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-2-2.webp" aria-label="Снимка 8">
+        <img src="img/staia-2-2.webp" alt="Снимка 8" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/detski-kut.webp" aria-label="Снимка 9">
+        <img src="img/detski-kut.webp" alt="Снимка 9" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-3.webp" aria-label="Снимка 10">
+        <img src="img/staia-3.webp" alt="Снимка 10" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-3-1.webp" aria-label="Снимка 11">
+        <img src="img/staia-3-1.webp" alt="Снимка 11" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/staia-3-2.webp" aria-label="Снимка 12">
+        <img src="img/staia-3-2.webp" alt="Снимка 12" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/troina-staia-s-balkon.webp" aria-label="Снимка 13">
+        <img src="img/troina-staia-s-balkon.webp" alt="Снимка 13" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/troina-staia-s-balkon1.webp" aria-label="Снимка 14">
+        <img src="img/troina-staia-s-balkon1.webp" alt="Снимка 14" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/troina-staia-s-balkon2.webp" aria-label="Снимка 15">
+        <img src="img/troina-staia-s-balkon2.webp" alt="Снимка 15" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/junior-suit.webp" aria-label="Снимка 16">
+        <img src="img/junior-suit.webp" alt="Снимка 16" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/junior-suit1.webp" aria-label="Снимка 17">
+        <img src="img/junior-suit1.webp" alt="Снимка 17" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/junior-suit2.webp" aria-label="Снимка 18">
+        <img src="img/junior-suit2.webp" alt="Снимка 18" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/besedka.webp" aria-label="Снимка 19">
+        <img src="img/besedka.webp" alt="Снимка 19" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/bethroom.webp" aria-label="Снимка 20">
+        <img src="img/bethroom.webp" alt="Снимка 20" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/extras.webp" aria-label="Снимка 21">
+        <img src="img/extras.webp" alt="Снимка 21" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/mehana2.webp" aria-label="Снимка 22">
+        <img src="img/mehana2.webp" alt="Снимка 22" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/villa-view.webp" aria-label="Снимка 23">
+        <img src="img/villa-view.webp" alt="Снимка 23" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/vunshna-terasa.webp" aria-label="Снимка 24">
+        <img src="img/vunshna-terasa.webp" alt="Снимка 24" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/vunshna-terasa1.webp" aria-label="Снимка 25">
+        <img src="img/vunshna-terasa1.webp" alt="Снимка 25" loading="lazy">
+      </button>
+
+      <button class="puzzleItem" type="button" data-full="img/vunshna-terasa2.webp" aria-label="Снимка 26">
+        <img src="img/vunshna-terasa2.webp" alt="Снимка 26" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="puzzleLightbox" id="puzzleLightbox" aria-hidden="true" role="dialog" aria-label="Преглед на снимка">
+  <div class="puzzleLightbox__backdrop" data-close="1"></div>
+
+  <div class="puzzleLightbox__panel" role="document">
+    <button class="puzzleLightbox__close" type="button" aria-label="Затвори" data-close="1">×</button>
+    <div class="puzzleLightbox__count" id="puzzleCount">1 / 26</div>
+
+    <button class="puzzleLightbox__nav puzzleLightbox__nav--prev" type="button" aria-label="Предишна">‹</button>
+    <button class="puzzleLightbox__nav puzzleLightbox__nav--next" type="button" aria-label="Следваща">›</button>
+
+    <img class="puzzleLightbox__img" id="puzzleImg" alt="Галерия снимка">
+  </div>
+</div>
+
+<!-- =========================
+    PRICES
+========================= -->
+
+<section id="ceni" class="prices" aria-label="Цени">
+  <div class="prices__inner">
+    <div class="prices__pill"><span>ЦЕНИ</span></div>
+
+    <h2 class="prices__title">
+      <span class="prices__titleTop">НАШИТЕ</span>
+      <span class="prices__titleBottom">ЦЕНИ</span>
+    </h2>
+
+    <p class="prices__lead">
+      Цените са ориентировъчни и могат да варират според сезона и заетостта.
+      За потвърждение – изпратете заявка за резервация.
+    </p>
+
+    <div class="priceGrid" aria-label="Цени - карти">
+      <article class="priceCard">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Двойна стая • 2 отделни легла</div>
+          <div class="priceCard__badge"> 2 гости</div>
+        </div>
+        <div class="priceCard__price">40 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за 2-ма гости</div>
+        <a class="priceCard__cta" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+      </article>
+
+      <article class="priceCard">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Двойна стая • спалня</div>
+          <div class="priceCard__badge"> 2 гости</div>
+        </div>
+        <div class="priceCard__price">40 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за 2-ма гости</div>
+        <a class="priceCard__cta" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+      </article>
+
+      <article class="priceCard">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Стандартна тройна стая</div>
+          <div class="priceCard__badge">4 гости</div>
+        </div>
+        <div class="priceCard__price">59 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за до 4-ма гости</div>
+        <a class="priceCard__cta" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+      </article>
+
+      <article class="priceCard">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Тройна стая • балкон</div>
+          <div class="priceCard__badge"> 3 гости</div>
+        </div>
+        <div class="priceCard__price">54 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за 3-ма гости</div>
+        <a class="priceCard__cta" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+      </article>
+
+      <article class="priceCard">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Джуниър суит • планински изглед</div>
+          <div class="priceCard__badge"> 3 гости</div>
+        </div>
+        <div class="priceCard__price">59 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за 3-ма гости</div>
+        <a class="priceCard__cta" href="#rezervacia">РЕЗЕРВИРАЙ</a>
+      </article>
+
+      <article class="priceCard priceCard--accent">
+        <div class="priceCard__top">
+          <div class="priceCard__name">Цялата къща</div>
+          <div class="priceCard__badge"> 16 гости</div>
+        </div>
+        <div class="priceCard__price">292 <span>€ / нощ</span></div>
+        <div class="priceCard__meta">Цена за до 16 човека</div>
+        <a class="priceCard__cta" href="#rezervacia">ИЗПРАТИ ЗАЯВКА</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="rezervacia" class="booking" aria-label="Резервирай">
+  <div class="booking__inner">
+    <div class="booking__head">
+      <div class="booking__pill"><span>РЕЗЕРВИРАЙ</span></div>
+    
+      <h2 class="booking__title">
+        <span class="booking__titleTop">РЕЗЕРВИРАЙ</span>
+        <span class="booking__titleBottom">СВОЯТА ПОЧИВКА</span>
+      </h2>
+    
+      <p class="booking__lead">
+        Изберете дати и опция, и изпратете заявка за резервация.
+      </p>
+    </div>
+    
+
+    <div class="booking__grid">
+      <!-- LEFT: calendar + form -->
+      <div class="booking__left">
+        <div class="bookingCard">
+          <div class="bookingCard__label">ИЗБЕРЕТЕ ДАТИ</div>
+
+          <!-- Calendar -->
+          <div class="cal" id="cal">
+            <div class="cal__top">
+              <button class="cal__nav" type="button" id="calPrev" aria-label="Предишен месец">‹</button>
+              <div class="cal__title" id="calTitle">—</div>
+              <button class="cal__nav" type="button" id="calNext" aria-label="Следващ месец">›</button>
+            </div>
+
+            <div class="cal__dow">
+              <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>НД</span>
+            </div>
+
+            <div class="cal__grid" id="calGrid"></div>
+
+            <button class="cal__hint" type="button" id="calHint">
+              ИЗБЕРЕТЕ ДАТИ ЗА ДА ВИДИТЕ ЦЕНА
+            </button>
+          </div>
+
+          <!-- NEW: dropdown for room -->
+          <div class="bookingPick">
+            <div class="bookingPick__label">ИЗБРАНА ОПЦИЯ</div>
+            <select class="bookingPick__select" id="roomSelect" aria-label="Избрана опция">
+              <option value="" selected disabled>Изберете опция…</option>
+              <option value="twin" data-room="Двойна стая • 2 отделни легла" data-price="40" data-guests="2">
+                Двойна стая • 2 отделни легла — 40€ / нощ (2 гости)
+              </option>
+              <option value="double" data-room="Двойна стая • спалня" data-price="40" data-guests="2">
+                Двойна стая • спалня — 40€ / нощ (2 гости)
+              </option>
+              <option value="triple4" data-room="Стандартна тройна стая" data-price="59" data-guests="4">
+                Стандартна тройна стая — 59€ / нощ (до 4 гости)
+              </option>
+              <option value="balcony3" data-room="Тройна стая • балкон" data-price="54" data-guests="3">
+                Тройна стая • балкон — 54€ / нощ (3 гости)
+              </option>
+              <option value="junior3" data-room="Джуниър суит • планински изглед" data-price="59" data-guests="3">
+                Джуниър суит • планински изглед — 59€ / нощ (3 гости)
+              </option>
+              <option value="house16" data-room="Цялата къща" data-price="292" data-guests="16">
+                Цялата къща — 292€ / нощ (до 16 гости)
+              </option>
+            </select>
+          </div>
+
+          <!-- price -->
+          <div class="bookingPrice" id="bookingPrice">
+            Обща цена: <strong>--</strong>
+          </div>
+
+          <!-- Form -->
+          <form class="bookForm" id="bookForm">
+            <!-- Hidden dates (filled by JS) -->
+            <input type="hidden" name="checkin" id="checkin">
+            <input type="hidden" name="checkout" id="checkout">
+
+            <!-- Hidden selected room/price -->
+            <input type="hidden" name="room" id="room">
+            <input type="hidden" name="price_per_night" id="pricePerNight">
+            <input type="hidden" name="nights" id="nights">
+            <input type="hidden" name="total_price" id="totalPrice">
+
+            <div class="bookForm__row">
+              <label class="field">
+                <span class="field__label">ИМЕ</span>
+                <input class="field__input" type="text" name="name" placeholder="Вашето име" required>
+              </label>
+
+              <label class="field">
+                <span class="field__label">ТЕЛЕФОН</span>
+                <input class="field__input" type="tel" name="phone" placeholder="+359..." required>
+              </label>
+            </div>
+
+            <div class="bookForm__row">
+              <label class="field">
+                <span class="field__label">EMAIL</span>
+                <input class="field__input" type="email" name="email" placeholder="email@example.com">
+              </label>
+
+              <label class="field">
+                <span class="field__label">ГОСТИ</span>
+                <select class="field__input" name="guests" id="guests" required>
+                  <option value="2">2 гости</option>
+                  <option value="3">3 гости</option>
+                  <option value="4">4 гости</option>
+                  <option value="5">5 гости</option>
+                  <option value="6">6 гости</option>
+                  <option value="16">16 гости (цялата къща)</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field field--full">
+              <span class="field__label">СЪОБЩЕНИЕ</span>
+              <textarea class="field__input field__textarea" name="message" placeholder="Допълнителни въпроси..."></textarea>
+            </label>
+
+            <button class="submitBtn" id="submitBtn" type="submit" disabled>
+              ▶ ИЗПРАТИ ЗАЯВКА
+            </button>
+
+            <div class="bookForm__small" id="dateNote">
+              * Моля, изберете дата на настаняване и дата на напускане, и изберете опция.
+            </div>
+          </form>
+
+
+          <div class="bookingSuccess" id="bookingSuccess">
+            <div class="bookingSuccess__icon">✓</div>
+            <div class="bookingSuccess__title">Благодарим Ви!</div>
+            <div class="bookingSuccess__text">
+              Вие успешно изпратихте вашето запитване!<br>
+              Ще се свържем с Вас възможно най-скоро.
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- RIGHT: info panels -->
+      <div class="booking__right">
+        <div class="infoCard infoCard--light">
+          <div class="infoCard__title">ДИРЕКТЕН КОНТАКТ</div>
+          <div class="infoCard__row">📞 <a href="tel:+359895424742"> 0895 424 742</a></div>
+        </div>
+
+        <div class="infoCard infoCard--dark">
+          <div class="infoCard__row">📞  0895 424 742 </div>
+         <!-- <div class="infoCard__row">✉️ mail@abv.bg</div>-->
+          <div class="infoCard__row">📍 с. Ветрен дол, ул. „Първа“ №32</div>
+          <div class="infoCard__line"></div>
+          <div class="infoCard__icons">
+            <a class="miniIcon" href="https://www.facebook.com/profile.php?id=61566425327960" aria-label="Facebook">f</a>
+           <!-- <a class="miniIcon" href="#" aria-label="Instagram">◎</a>-->
+          </div>
+        </div>
+
+        <div class="infoCard infoCard--dark">
+          <div class="infoCard__title">ЧАСОВЕ</div>
+          <div class="times">
+            <div class="timeBox">
+              <div class="timeBox__label">НАСТАНЯВАНЕ</div>
+              <div class="timeBox__value"> От 14:00 до 20:00ч</div>
+            </div>
+            <div class="timeBox">
+              <div class="timeBox__label">НАПУСКАНЕ</div>
+              <div class="timeBox__value">до 11:00</div>
+            </div>
+          </div>
+          <div class="infoCard__small">
+            * При възможност предлагаме ранно настаняване – свържете се с нас предварително.
+          </div>
+        </div>
+
+        <div class="infoCard infoCard--dark">
+          <div class="infoCard__title">ЛОКАЦИЯ</div>
+        
+          <div class="mapBox">
+            <iframe
+              title="Карта"
+              src="https://www.google.com/maps?q=%D1%81.+%D0%92%D0%B5%D1%82%D1%80%D0%B5%D0%BD+%D0%B4%D0%BE%D0%BB,+%D1%83%D0%BB.+%E2%80%9E%D0%9F%D1%8A%D1%80%D0%B2%D0%B0%E2%80%9C+%E2%84%9632&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              style="border:0; width:100%; height:100%;"
+              allowfullscreen
+            ></iframe>
+          </div>
+        
+          <div class="infoCard__small">с. Ветрен дол • ул. „Първа“ №32</div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="zabelejitelnosti" class="attractions" aria-label="Забележителности">
+  <div class="attractions__inner">
+
+    <div class="attractions__pill"><span>НАБЛИЗО</span></div>
+
+    <h2 class="attractions__title">
+      <span class="attractions__titleTop">ЗАБЕЛЕЖИТЕЛНОСТИ</span>
+      <span class="attractions__titleBottom">В РАЙОНА</span>
+    </h2>
+
+    <p class="attractions__lead">
+      Открийте красиви природни и културни обекти в близост до нашата къща за гости.
+    </p>
+
+    <div class="attractionsGrid">
+
+      <details class="attractionCard">
+        <summary class="attractionCard__summary">
+          <div class="attractionCard__image">
+            <img src="img/tesnolineika.png" alt="Родопска теснолинейка">
+          </div>
+          <div class="attractionCard__name">Родопска теснолинейка</div>
+        </summary>
+      
+        <div class="attractionCard__more">
+          <p>
+            Единствената теснолинейка в България, преминаваща през красиви родопски пейзажи. 
+            Изключително атрактивна разходка за туристи и семейства.
+          </p>
+        </div>
+      </details>
+      
+      
+      <details class="attractionCard">
+        <summary class="attractionCard__summary">
+          <div class="attractionCard__image">
+            <img src="img/pliocenski-park.png" alt="Плиоценски парк Дорково">
+          </div>
+          <div class="attractionCard__name">„Плиоценски парк“ – Дорково</div>
+        </summary>
+      
+        <div class="attractionCard__more">
+          <p>
+            Уникален музей на открито с реалистични модели на праисторически животни.
+            Подходящ за деца, образователни посещения и разходки сред природата.
+          </p>
+        </div>
+      </details>
+      
+      
+      <details class="attractionCard">
+        <summary class="attractionCard__summary">
+          <div class="attractionCard__image">
+            <img src="img/sv.ilia.png" alt="Параклис Св. Илия">
+          </div>
+          <div class="attractionCard__name">Параклис „Св. Илия“ – с. Варвара</div>
+        </summary>
+      
+        <div class="attractionCard__more">
+          <p>
+            Малък, но много живописен параклис с панорамна гледка към района.
+            Подходящо място за спокойствие, разходка и снимки.
+          </p>
+        </div>
+      </details>
+
+
+      
+
+     <!-- <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/church.webp" alt="Св. Великомъченица Варвара">
+        </div>
+        <div class="attractionCard__name">„Св. Великомъченица Варвара“</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/trail.webp" alt="Туристическа пътека Панорама">
+        </div>
+        <div class="attractionCard__name">Туристическа пътека „Панорама“</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/reserve.webp" alt="Резерват Света Марина">
+        </div>
+        <div class="attractionCard__name">Резерват „Света Марина“</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/hut.webp" alt="Хижа Равно боре">
+        </div>
+        <div class="attractionCard__name">Хижа „Равно боре“</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/monastery.webp" alt="Баткунски манастир">
+        </div>
+        <div class="attractionCard__name">Баткунски манастир</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/cepina.webp" alt="Крепост Цепина">
+        </div>
+        <div class="attractionCard__name">Крепост „Цепина“</div>
+      </article>
+
+      <article class="attractionCard">
+        <div class="attractionCard__image">
+          <img src="img/attractions/cave.webp" alt="Пещера Снежанка">
+        </div>
+        <div class="attractionCard__name">Пещера Снежанка</div>
+      </article>
+
+    </div>-->
+
+  </div>
+</section>
+
+
+
+
+<footer class="siteFooter" aria-label="Футър">
+  <div class="siteFooter__bg" aria-hidden="true"></div>
+  <div class="siteFooter__overlay" aria-hidden="true"></div>
+
+  <div class="siteFooter__inner">
+    <div class="siteFooter__grid">
+      <!-- LEFT: Brand -->
+      <div class="footerBrand">
+        <div class="footerBrand__top">
+         <!-- <span class="footerBrand__mark" aria-hidden="true"></span>-->
+          <div>
+            <div class="footerBrand__name">КЪЩА ЗА ГОСТИ "ЕМА"</div>
+            <div class="footerBrand__sub">СЕЛО ВЕТРЕН ДОЛ</div>
+          </div>
+        </div>
+
+        <p class="footerBrand__text">
+          Уют, спокойствие и зеленина в сърцето на природата!<br>
+          Идеалното място за семейна ваканция, романтичен уикенд или бягство с приятели.
+        </p>
+
+        <div class="footerSocial">
+          <a class="footerIcon" href="https://www.facebook.com/profile.php?id=61566425327960" aria-label="Facebook">f</a>
+         <!-- <a class="footerIcon" href="#" aria-label="Instagram">◎</a>-->
+        </div>
+      </div>
+
+      <!-- MIDDLE: Nav -->
+      <nav class="footerNav" aria-label="Навигация">
+        <div class="footerColTitle">НАВИГАЦИЯ</div>
+        <a href="#nachalo">НАЧАЛО</a>
+        <a href="#za-nas">ЗА НАС</a>
+        <a href="#stai">СТАИ</a>
+        <a href="#udobstva">УДОБСТВА</a>
+        <a href="#galeria">ГАЛЕРИЯ</a>
+        <a href="#ceni">ЦЕНИ</a>
+        <a href="#rezervacia">РЕЗЕРВАЦИЯ</a>
+        <a href="#zabelejitelnosti">НАБЛИЗО</a>
+      </nav>
+
+      <!-- RIGHT: Contacts -->
+      <div class="footerContacts">
+        <div class="footerColTitle">КОНТАКТИ</div>
+
+        <div class="footerContactRow">
+          <span class="footerContactIcon" aria-hidden="true">📞</span>
+          <a href="tel:+359895424742">0895-424-742</a>
+        </div>
+
+      <!--  <div class="footerContactRow">
+          <span class="footerContactIcon" aria-hidden="true">✉️</span>
+          <a href="mailto:mail@abv.bg">mail@abv.bg</a>
+        </div>-->
+
+        <div class="footerContactRow">
+          <span class="footerContactIcon" aria-hidden="true">📍</span>
+          <span>Ветрен дол, ул. „Първа“ №32</span>
+        </div>
+
+        <div class="footerContactSmall">
+          Област Пазарджик
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <div class="footerBottom__left">
+        © <span id="footerYear">2026</span> Къща за гости „ЕМА“. Всички права запазени.
+      </div>
+
+      <a class="footerBottom__link" href="#" aria-label="Правила и условия">ПРАВИЛА И УСЛОВИЯ</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<button class="toTop" id="toTop" aria-label="Към началото">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
